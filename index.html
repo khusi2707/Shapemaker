@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Drawing Tool</h1>
+  <canvas id="canvas" width="1100" height="500"></canvas>
+  
+  <div id="Box">
+    <!-- Color control -->
+    <div class="control-section">
+      <input type="color" id="color">
+      <div class="label">Color</div>
+    </div>
+    
+    <!-- Pencil size control -->
+    <div class="control-section">
+      <button id="decrease">-</button>
+      <span id="size">1</span>
+      <button id="increase">+</button>
+      <div class="label">Pencil Size</div>
+    </div>
+    
+    <!-- Erase control -->
+    <div class="control-section">
+      <button id="clear">🧽</button>
+      <div class="label">Erase</div>
+    </div>
+    
+    <!-- Shape controls -->
+    <div class="control-section">
+      <button id="pencil">✏️</button>
+      <div class="label">Pencil</div>
+    </div>
+
+    <div class="control-section">
+      <button id="line">Line</button>
+      <button id="rectangle">Rectangle</button>
+      <button id="triangle">Triangle</button>
+      <div class="label">Shapes</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>  
+</body>
+</html>
+
